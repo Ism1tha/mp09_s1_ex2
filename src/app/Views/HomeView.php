@@ -1,4 +1,4 @@
-<div class="grid grid-cols-3 gap-4 py-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 py-4">
     <a class="block flex items-center justify-center text-white bg-blue-500 hover:bg-blue-600 rounded px-4 py-2" href="/numeric-calculator">
         <svg class="inline mr-2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
             <path fill="white"
