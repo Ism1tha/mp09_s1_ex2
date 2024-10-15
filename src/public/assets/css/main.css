@@ -100,94 +100,6 @@ form input[type="text"]:focus {
     margin: 0px;
 }
 
-/* Numeric form styles */
-
-#numeric-calculator-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#numeric-calculator-form input {
-    padding: 0.5rem;
-    margin: 0.5rem;
-    width: 100%;
-}
-
-#numeric-calculator-form .grid-container {
-    border: 1px solid #444;
-    border-radius: 5px;
-    padding: 10px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0.5rem;
-}
-
-#numeric-calculator-form .grid-container button {
-    display: block;
-    text-decoration: none;
-    background-color: #444;
-    color: #eee;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    transition: background-color 0.3s ease;
-}
-
-#numeric-calculator-form .grid-container button:hover {
-    background-color: #555;
-}
-
-/* Modal styles */
-
-#history-modal-wrapper {
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#history-modal {    
-    background-color: #222;
-    color: #eee;
-    padding: 20px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-    position: relative;
-}
-
-#history-modal .close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-#history-modal .close:hover {
-    color: #007bff;
-}
-
-#history h2 {
-    margin-bottom: 20px;
-}
-
-#history {
-    padding: 10px;
-}
-
 /* Responsive styles */
 
 @media (min-width: 768px) {
@@ -200,7 +112,7 @@ form input[type="text"]:focus {
     header .return-btn {
         width: auto;
     }
-    
+
     #string-calculator-form .radio-container {
         flex-direction: column;
         align-items: flex-start;
@@ -211,8 +123,7 @@ form input[type="text"]:focus {
         margin-bottom: 0.5rem;
     }
 
-    #string-calculator-form, 
-    #numeric-calculator-form {
+    #string-calculator-form {
         max-width: 500px;  /* Ajusta este valor según tus necesidades */
         margin: 0 auto;
         padding: 8px;
