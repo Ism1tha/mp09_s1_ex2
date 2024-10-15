@@ -27,37 +27,6 @@ h2 {
     font-weight: 500;
 }
 
-/* Home styles */
-
-.home-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.home-menu a {
-    display: block;
-    text-decoration: none;
-    background-color: #007bff;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    transition: background-color 0.3s ease;
-}
-
-.home-menu a:hover {
-    background-color: #0056b3;
-}
-
-.home-menu svg {
-    vertical-align: middle;
-    margin-right: 0.5rem;
-}
-
 /* General form styles */
 
 form .action-container {
@@ -231,11 +200,7 @@ form input[type="text"]:focus {
     header .return-btn {
         width: auto;
     }
-
-    .home-menu {
-        flex-direction: row;
-    }
-
+    
     #string-calculator-form .radio-container {
         flex-direction: column;
         align-items: flex-start;
