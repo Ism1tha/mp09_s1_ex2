@@ -1,6 +1,6 @@
-# MP09, Sprint 1, exercice 1
+# MP09, Sprint 1, exercice 2
 
-## Calculator frontend
+## Calculator frontend with Tailwind CSS
 
 Run using `docker-compose up`
 
