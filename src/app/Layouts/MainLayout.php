@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="bg-gray-800 text-white md-flex md-justify-between md-items-center px-4 py-4">
+    <header class="bg-gray-800 text-white px-4 py-4 md:flex md:justify-between md:items-center">
         <div class="text-2xl"><?= $title ?></div>
         <?php if ($return_path != null): ?>
             <a class="inline-block bg-blue-500 px-4 py-2 rounded w-full md:w-auto" href="<?= $return_path ?>">
@@ -20,7 +20,7 @@
             </a>
         <?php endif; ?>
     </header>
-    <div class="w-full  p-4 md:w-3/4 md:mx-auto">
+    <div class="w-full px-4 py-8 md:w-3/4 md:mx-auto md:max-w-3xl">
         <?= $content ?>
     </div>
     <footer class="bg-gray-800 text-white text-center py-8">
