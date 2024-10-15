@@ -27,45 +27,6 @@ h2 {
     font-weight: 500;
 }
 
-
-/* Header styles */
-
-header {
-    padding: 1rem;
-    text-align: center;
-    background-color: #333;
-}
-
-header .title {
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-header .return-btn {
-    display: block;
-    text-decoration: none;
-    background-color: #007bff;
-    color: #fff; 
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    transition: background-color 0.3s ease
-}
-
-header .return-btn:hover {
-    background-color: #0056b3;
-}
-
-header .return-btn svg {
-    vertical-align: middle;
-    margin-right: 0.5rem;
-}
-
-.container {
-    padding: 1rem;
-}
-
 /* Home styles */
 
 .home-menu {
@@ -211,14 +172,6 @@ form input[type="text"]:focus {
     background-color: #555;
 }
 
-/* Footer styles */
-
-footer {
-    padding: 1rem;
-    text-align: center;
-    background-color: #333;
-}
-
 /* Modal styles */
 
 #history-modal-wrapper {
@@ -277,11 +230,6 @@ footer {
 
     header .return-btn {
         width: auto;
-    }
-
-    .container {
-        max-width: 80%;
-        margin: 0 auto;
     }
 
     .home-menu {
