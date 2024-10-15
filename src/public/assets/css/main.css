@@ -124,7 +124,7 @@ form input[type="text"]:focus {
     }
 
     #string-calculator-form {
-        max-width: 500px;  /* Ajusta este valor según tus necesidades */
+        max-width: 500px;
         margin: 0 auto;
         padding: 8px;
         border: 1px solid #444;
