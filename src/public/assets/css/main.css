@@ -1,0 +1,309 @@
+/** 
+ * Main CSS file for the application
+ * Author: Ismael Semmar Galvez
+ */
+
+/* General styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #222;
+    color: #eee;
+}
+
+a, button {
+    font-size: 16px;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+
+/* Header styles */
+
+header {
+    padding: 1rem;
+    text-align: center;
+    background-color: #333;
+}
+
+header .title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+header .return-btn {
+    display: block;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff; 
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease
+}
+
+header .return-btn:hover {
+    background-color: #0056b3;
+}
+
+header .return-btn svg {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.container {
+    padding: 1rem;
+}
+
+/* Home styles */
+
+.home-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-menu a {
+    display: block;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.home-menu a:hover {
+    background-color: #0056b3;
+}
+
+.home-menu svg {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+/* General form styles */
+
+form .action-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form .action-container button {
+    display: block;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+form .action-container button:hover {
+    background-color: #0056b3;
+}
+
+form input[type="text"] {
+    border-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+}
+
+form input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.hidden {
+    display: none!important;
+}
+
+/* String form styles */
+
+#string-calculator-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#string-calculator-form input {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 100%;
+}
+
+#string-calculator-form .radio-container {
+    display: none; 
+}
+
+#string-calculator-form .action-container .submit-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin: 6px 0px;
+}
+
+#string-calculator-form .action-container .submit-container button {
+    margin: 0px;
+}
+
+/* Numeric form styles */
+
+#numeric-calculator-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#numeric-calculator-form input {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 100%;
+}
+
+#numeric-calculator-form .grid-container {
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+}
+
+#numeric-calculator-form .grid-container button {
+    display: block;
+    text-decoration: none;
+    background-color: #444;
+    color: #eee;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#numeric-calculator-form .grid-container button:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #333;
+}
+
+/* Modal styles */
+
+#history-modal-wrapper {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#history-modal {    
+    background-color: #222;
+    color: #eee;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+#history-modal .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#history-modal .close:hover {
+    color: #007bff;
+}
+
+#history h2 {
+    margin-bottom: 20px;
+}
+
+#history {
+    padding: 10px;
+}
+
+/* Responsive styles */
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .return-btn {
+        width: auto;
+    }
+
+    .container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .home-menu {
+        flex-direction: row;
+    }
+
+    #string-calculator-form .radio-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #string-calculator-form .radio-group {
+        flex-direction: row;
+        margin-bottom: 0.5rem;
+    }
+
+    #string-calculator-form, 
+    #numeric-calculator-form {
+        max-width: 500px;  /* Ajusta este valor según tus necesidades */
+        margin: 0 auto;
+        padding: 8px;
+        border: 1px solid #444;
+        border-radius: 4px;
+    }
+}
