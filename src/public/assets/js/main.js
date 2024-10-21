@@ -71,11 +71,6 @@ function onSubmitString(event) {
 /* ======= History modal functions ======= */
 
 function openHistoryModal() {
-    var historyModalWrapperElement = document.getElementById('history-modal-wrapper');
-    historyModalWrapperElement.classList.remove('hidden');
-}
-
-function closeHistoryModal() {
-    var historyModalWrapperElement = document.getElementById('history-modal-wrapper');
-    historyModalWrapperElement.classList.add('hidden');
+    var historyModal = new bootstrap.Modal(document.getElementById('historyModal'));
+    historyModal.show();
 }
